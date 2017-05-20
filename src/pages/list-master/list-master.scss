@@ -1,0 +1,27 @@
+page-list-master {
+    .popular {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 225px;
+  }
+  .recommended {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 225px;
+  }
+  .item-divider{
+  background-color: orange;
+  color: black;
+  
+    }
+  .item-divider:active{
+    opacity: 0.8;   
+    }
+}
+
+
+::-webkit-scrollbar{
+  display:none;
+}

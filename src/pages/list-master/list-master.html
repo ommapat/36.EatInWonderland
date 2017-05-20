@@ -1,0 +1,65 @@
+<html ng-app="ionicApp">
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Eat in Wonderland</ion-title>
+
+    <!--<ion-buttons end>
+      <button ion-button icon-only (click)="addItem()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>-->
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content overflow-scroll="true">
+
+  <ion-list>
+      <ion-item style="background-color: orange">
+        <h1>Popular Menus</h1>
+     </ion-item>
+  <div class=popular>
+  <ion-slides>
+  <ion-slide>
+    <div class=picture>
+      <ion-img src='../images/pop1.jpg' style="width:360px; height:210px;"></ion-img>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class=picture>
+      <ion-img src='../images/pop2.jpg' style="width:360px; height:210px;"></ion-img>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class=picture>
+      <ion-img src='../images/pop3.jpg' style="width:360px; height:210px;"></ion-img>
+    </div>
+  </ion-slide>
+</ion-slides>
+  </div>
+      <ion-item style="background-color: orange">
+        <h1>Recommended Menus</h1>
+     </ion-item>
+  <div class=recommended>
+  <ion-slides>
+  <ion-slide>
+    <div class=picture>
+      <ion-img src='assets/img/speakers/frshrimp.jpg' style="width:360px; height:210px;" (click)="openItem()"></ion-img>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class=picture>
+      <ion-img src='../images/pop2.jpg' style="width:360px; height:210px;"></ion-img>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class=picture>
+      <ion-img src='../images/pop3.jpg' style="width:360px; height:210px;"></ion-img>
+    </div>
+  </ion-slide>
+</ion-slides>
+  </div>
+  </ion-list>
+  
+</ion-content>

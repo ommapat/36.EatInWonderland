@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{Name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <!--<div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  </div>-->
+<div>
+ <ion-list>
+        <ion-item>
+            <h2> Name: {{Name}}</h2>
+        
+        </ion-item>
+        <ion-item>
+            <h2>Price: {{Price}}</h2>
+            
+        </ion-item>
+    </ion-list>
+    
+    
+  </div>
+  <div>
+    <a nav-transition="none" href="#/list-master/list-master.html" style="text-decoration:none">
+    <button ion-button block (click)="showConfirm()">Order</button>
+    </a>
+  </div>
+</ion-content>

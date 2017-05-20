@@ -1,0 +1,26 @@
+<ion-header >
+ <ion-navbar >
+    <ion-title>{{ 'SEARCH_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-list>
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Search the menu list" ></ion-searchbar>
+
+
+
+
+    <ion-item *ngFor="let menu of foods | async" (click)="openItem(menu)">
+
+      <div>{{menu.Name}}</div>
+      <p>{{menu.Price}}</p>
+
+
+    </ion-item>
+  </ion-list>
+</ion-content>
